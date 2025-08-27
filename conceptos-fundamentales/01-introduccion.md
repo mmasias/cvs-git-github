@@ -4,11 +4,11 @@
 
 ### El problema universal de gestión de cambios
 
-Considérense estas situaciones comunes:
+Consideremos estas situaciones comunes:
 
 **Escritor**: Modifica el capítulo final de una novela eliminando una escena importante. Dos días después se da cuenta de que la necesita, pero la ha sobrescrito irreversiblemente.
 
-**Diseñador**: El cliente solicita "volver a la versión anterior" del logo, pero existen 15 archivos llamados `logo_final_v2_definitivo_ESTE.psd` y no se recuerda cuál era la que le gustaba.
+**Diseñador**: El cliente solicita "volver a la versión anterior" del logo, pero existen 15 archivos llamados `logo_final_v2_definitivo_ESTE.psd` y resulta imposible recordar cuál era la que le gustaba.
 
 **Investigador**: Colabora con tres colegas en un paper importante. Cada uno edita el documento por separado y cuando se intenta combinar los cambios, se descubre que dos personas eliminaron párrafos diferentes que el tercero necesitaba.
 
@@ -92,23 +92,23 @@ Un **sistema de control de versiones** es una herramienta que registra automáti
 
 **Diseñadores y creativos**
 - Exploración de conceptos alternativos sin perder versiones anteriores
-- Colaboración en campañas complejas con múltiples assets
+- Colaboración en campañas complejas con múltiples recursos
 - Gestión de bibliotecas de recursos reutilizables
 
 **Investigadores y académicos**
 - Coautoría en papers con seguimiento detallado de contribuciones
-- Gestión de datasets y análisis con reproducibilidad garantizada
+- Gestión de conjuntos de datos y análisis con reproducibilidad garantizada
 - Documentación de metodologías y decisiones de investigación
 
 **Profesionales empresariales**
 - Control de versiones en documentos críticos (contratos, políticas)
-- Auditoría completa de cambios para compliance
+- Auditoría completa de cambios para cumplimiento normativo
 - Gestión de propuestas y licitaciones complejas
 
 **Desarrolladores de software**
 - Coordinación de equipos trabajando en funcionalidades paralelas
-- Gestión de releases y deployment de aplicaciones
-- Debugging mediante análisis histórico de cambios
+- Gestión de versiones y despliegue de aplicaciones
+- Depuración mediante análisis histórico de cambios
 
 ### Beneficios a largo plazo
 
@@ -136,7 +136,7 @@ Un **sistema de control de versiones** es una herramienta que registra automáti
 - El trabajo es crítico para la organización
 - Los archivos evolucionan significativamente a lo largo del tiempo
 - Se necesita documentar decisiones y cambios para auditorías
-- Se trabaja con archivos de texto (documentos, código, configuraciones)
+- Se trabaja con archivos de texto plano (código, configuraciones, documentación)
 
 **Implementación recomendada**:
 - Se desea mejorar la organización personal
@@ -183,7 +183,7 @@ documento.docx (con historial completo navegable)
 ├── Versión inicial (15 Feb 2025)
 ├── Añadir sección metodología (18 Feb 2025)  
 ├── Revisar conclusiones (22 Feb 2025)
-├── Correcciones estilo (25 Feb 2025)
+├── Correcciones de estilo (25 Feb 2025)
 └── Versión actual (28 Feb 2025)
 ```
 
@@ -193,7 +193,7 @@ documento.docx (con historial completo navegable)
 - Se designa una carpeta como "repositorio"
 - El sistema comienza a rastrear cambios en esa carpeta
 
-**2. Trabajo normal**  
+**2. Trabajo habitual**  
 - Se editan archivos usando las herramientas habituales
 - El sistema detecta automáticamente qué ha cambiado
 
