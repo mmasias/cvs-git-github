@@ -37,6 +37,8 @@ El control de versiones funciona como la infraestructura que facilita estos proc
 
 Git, como implementación específica de estos principios, se destaca por su eficiencia en la gestión distribuida y su capacidad para manejar proyectos de gran escala, convirtiéndose en la herramienta de referencia para materializar estos beneficios en la práctica profesional.
 
+> **💡 Información detallada** Para una explicación exhaustiva sobre la necesidad del control de versiones, los problemas específicos que resuelve y cómo beneficia a diferentes profesionales, consultar: [Introducción al control de versiones](conceptos-fundamentales/01-introduccion.md)
+
 ## ¿Cómo?
 
 ### Modelo mental básico
