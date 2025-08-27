@@ -1,0 +1,50 @@
+@startuml operacionesConsultaGestion
+
+participant "Directorio\nde trabajo" as DT
+participant "Área de\npreparación" as AP  
+participant "Repositorio\nlocal" as RL
+participant "Repositorio\nremoto" as RR
+
+== Operaciones de consulta ==
+
+DT -> DT : status
+note right : Ver estado actual:\narchivos modificados,\npreparados, etc.
+
+RL -> RL : log
+note right : Ver historial\nde confirmaciones
+
+DT -> DT : diff
+note right : Comparar cambios\nen directorio de trabajo
+
+AP -> AP : diff --staged
+note right : Comparar cambios\nen área de preparación
+
+RL -> RL : show
+note right : Ver detalles de\nconfirmación específica
+
+== Operaciones de gestión ==
+
+DT -> AP : rm
+note right : Marcar archivo\npara eliminación
+
+DT -> AP : mv
+note right : Marcar archivo\npara renombrado/movimiento
+
+AP -> DT : reset HEAD <archivo>
+note right : Quitar archivo del\nárea de preparación
+
+RL -> DT : reset --hard
+note right : Descartar todos los cambios\ny volver a confirmación específica
+
+RL -> AP : reset --soft
+note right : Volver a confirmación\nmanteniendo cambios preparados
+
+== Operaciones de comparación ==
+
+RL -> RL : diff HEAD~1 HEAD
+note right : Comparar entre\nconfirmaciones específicas
+
+RR -> RL : diff origin/main main
+note right : Comparar rama local\ncon rama remota
+
+@enduml

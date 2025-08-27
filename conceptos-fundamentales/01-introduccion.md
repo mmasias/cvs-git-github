@@ -6,13 +6,13 @@
 
 Consideremos estas situaciones comunes:
 
-**Escritor**: Modifica el capítulo final de una novela eliminando una escena importante. Dos días después se da cuenta de que la necesita, pero la ha sobrescrito irreversiblemente.
+- **Escritor**: Modifica el capítulo final de una novela eliminando una escena importante. Dos días después se da cuenta de que la necesita, pero la ha sobrescrito irreversiblemente.
 
-**Diseñador**: El cliente solicita "volver a la versión anterior" del logo, pero existen 15 archivos llamados `logo_final_definitivo.psd` y resulta imposible recordar cuál era la que le gustaba.
+- **Diseñador**: El cliente solicita "volver a la versión anterior" del logo, pero existen 15 archivos llamados `logo_final_definitivo.psd` y resulta imposible recordar cuál era la que le gustaba.
 
-**Investigador**: Colabora con tres colegas en un paper importante. Cada uno edita el documento por separado y cuando se intenta combinar los cambios, se descubre que dos personas eliminaron párrafos diferentes que el tercero necesitaba.
+- **Investigador**: Colabora con tres colegas en un paper importante. Cada uno edita el documento por separado y cuando se intenta combinar los cambios, se descubre que dos personas eliminaron párrafos diferentes que el tercero necesitaba.
 
-**Profesional empresarial**: El supervisor solicita explicar por qué se cambió una política corporativa el mes pasado, quién la cambió y cuál era la justificación, pero no existe registro de las modificaciones.
+- **Profesional empresarial**: El supervisor solicita explicar por qué se cambió una política corporativa el mes pasado, quién la cambió y cuál era la justificación, pero no existe registro de las modificaciones.
 
 ### Los costos reales de la desorganización
 

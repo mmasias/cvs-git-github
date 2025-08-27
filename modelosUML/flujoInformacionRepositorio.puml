@@ -1,0 +1,40 @@
+@startuml flujoInformacionRepositorio
+
+participant "Directorio\nde trabajo" as DT
+participant "Área de\npreparación" as AP  
+participant "Repositorio\nlocal" as RL
+participant "Repositorio\nremoto" as RR
+
+== Ciclo típico de trabajo ==
+
+note over DT : Editar archivos con\nherramientas habituales
+DT -> DT : modificar archivos
+
+DT -> AP : add
+note right : Seleccionar cambios\nespecíficos para registro
+
+AP -> RL : commit
+note right : Crear confirmación\ncon metadatos
+
+RL -> RR : push
+note right : Sincronizar cambios\ncon repositorio central
+
+== Obtención de cambios ==
+
+RR -> RL : fetch
+note right : Descargar cambios\nsin integrar
+
+RR -> DT : pull
+note right : Descargar e integrar\ncambios automáticamente
+
+== Navegación en el historial ==
+
+RL -> DT : checkout
+note right : Cambiar a versión\nespecífica del historial
+
+== Corrección de errores ==
+
+AP -> DT : reset
+note right : Mover cambios de vuelta\nal directorio de trabajo
+
+@enduml
