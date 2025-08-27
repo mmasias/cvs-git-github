@@ -1,0 +1,42 @@
+@startuml flujoTrabajoFundamental
+
+state ElRepo {
+  state Inicializado {
+    Inicializado : Carpeta designada como "repositorio"
+    Inicializado : Sistema rastreando cambios
+  }
+
+  state Trabajado {
+    Trabajado : Archivos editados con herramientas habituales
+    Trabajado : Sistema detecta cambios automáticamente
+  }
+
+  state Confirmado {
+    Confirmado : Unidad lógica de trabajo completada
+    Confirmado : "Confirmación" creada con descripción
+    Confirmado : Punto restaurable permanente establecido
+  }
+
+  state Navegado {
+    Navegado : Versiones anteriores examinadas
+    Navegado : Evolución del proyecto analizada
+    Navegado : Estado histórico revisado
+  }
+
+  state Colaborado {
+    Colaborado : Trabajo sincronizado con otros colaboradores
+    Colaborado : Cambios fusionados automáticamente
+    Colaborado : Conflictos resueltos cuando fue necesario
+  }
+}
+
+[*] --> Inicializado : inicializar()
+  Inicializado --> Trabajado : trabajar()
+  Trabajado --> Confirmado : confirmar()
+  Confirmado --> Trabajado : continuarTrabajando()
+  Confirmado --> Navegado : navegarTemporalmente()
+  Navegado --> Trabajado : volverAlPresente()
+  Confirmado --> Colaborado : colaborar()
+  Colaborado --> Trabajado : continuarTrabajando()
+
+@enduml
