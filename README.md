@@ -219,6 +219,7 @@ Una vez completado el trabajo en la rama experimental, estos comandos regresan a
 └── recursos/
     ├── comandos-referencia.md
     ├── solucion-problemas.md
+    ├── herramientas-graficas.md
     └── bibliografia.md
 ```
 
