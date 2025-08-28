@@ -94,32 +94,6 @@ El proceso sigue un patrón natural: **modificar** → **seleccionar cambios** �
 - Gestión de propuestas comerciales y licitaciones.
 - Control de versiones en políticas y procedimientos.
 
-## Estructura del repositorio
-
-```
-├── README.md                 # Este archivo
-├── conceptos-fundamentales/
-│   ├── 01-introduccion.md
-│   ├── 02-repositorios.md
-│   └── 03-confirmaciones.md
-├── comandos-basicos/
-│   ├── configuracion.md
-│   ├── gestion-cambios.md
-│   └── colaboracion.md
-├── flujos-trabajo/
-│   ├── flujo-personal.md
-│   ├── flujo-colaborativo.md
-│   └── flujo-empresarial.md
-├── ejercicios-practicos/
-│   ├── nivel-basico/
-│   ├── nivel-intermedio/
-│   └── nivel-avanzado/
-└── recursos/
-    ├── comandos-referencia.md
-    ├── solucion-problemas.md
-    ├── herramientas-graficas.md
-    └── bibliografia.md
-```
 
 ## ¿Cuándo?
 
