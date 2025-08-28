@@ -40,6 +40,18 @@ Los sistemas de control de versiones organizan esta información mediante una ar
 
 ## ¿Para qué?
 
+### Resolución de problemas de gestión de información
+
+La arquitectura de repositorios resuelve los problemas de confusión informacional mencionados:
+
+|Problema|Solución mediante repositorios|Beneficio|
+|-|-|-|
+|"No sé dónde están mis cambios"|Espacios conceptuales claramente definidos con propósitos específicos|Claridad sobre el estado y ubicación de toda modificación|
+|"Mi colaborador no ve mis cambios"|Distinción explícita entre repositorio local y remoto con operaciones de sincronización|Control preciso sobre cuándo y qué información se comparte|
+|"Perdí mi trabajo"|Múltiples niveles de almacenamiento con recuperación granular|Protección integral contra pérdida de información|
+
+> **💡 Para beneficios conceptuales:** Los beneficios sobre aprendizaje, innovación y documentación del proceso creativo se desarrollan en [El proceso de creación](04-04-procesoDeCreacion.md).
+
 ## ¿Cómo?
 
 ### Modelo conceptual básico

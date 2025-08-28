@@ -19,7 +19,7 @@ La falta de documentación del proceso creativo genera:
 |Pérdida de conocimiento|Dificultad de replicación|Evaluación superficial|
 |-|-|-|
 |**Problema**: Las decisiones, experimentos y razonamientos se pierden una vez completado el proyecto|**Problema**: Resulta imposible reproducir procesos exitosos o evitar errores ya cometidos|**Problema**: Se evalúa solo el resultado final, no el esfuerzo, creatividad o metodología empleada|
-|**Consecuencia**: Reinvención constante de soluciones, pérdida de lecciones aprendidas, conocimiento que se va con las personas|**Consecuencia**: Inability para escalar procesos exitosos, repetición de experimentos fallidos, pérdida de eficiencia|**Consecuencia**: Desmotivación de procesos creativos rigurosos, premiación de resultados sin considerar métodos, pérdida de oportunidades de mejora|
+|**Consecuencia**: Reinvención constante de soluciones, pérdida de lecciones aprendidas, conocimiento que se va con las personas|**Consecuencia**: Incapacidad para escalar procesos exitosos, repetición de experimentos fallidos, pérdida de eficiencia|**Consecuencia**: Desmotivación de procesos creativos rigurosos, premiación de resultados sin considerar métodos, pérdida de oportunidades de mejora|
 
 ## ¿Qué?
 
@@ -53,6 +53,8 @@ Un sistema que registra automáticamente cada decisión, experimento, iteración
 |Acelera procesos futuros evitando repetir errores conocidos|Establece mejores prácticas basadas en evidencia real|Incentiva la documentación rigurosa del trabajo intelectual|
 
 ### Aplicaciones por contexto
+
+> **💡 Para implementación práctica:** Las decisiones sobre estructura de repositorios, escalas de proyecto y estrategias técnicas específicas se desarrollan en detalle en [Repositorios](02-repositorios.md).
 
 |Contexto educativo|Contexto empresarial|Contexto de investigación|
 |-|-|-|
@@ -94,7 +96,7 @@ Un sistema que registra automáticamente cada decisión, experimento, iteración
 |-|-|-|
 |Qué se cambió, cuándo y por qué se consideró necesario ese cambio específico|Qué aproximaciones se probaron, cuáles funcionaron y por qué se abandonaron otras|Cómo ideas simples se desarrollan hacia soluciones más complejas y refinadas|
 |Registro de alternativas consideradas y criterios de selección empleados|Documentación de hipótesis, pruebas realizadas y conclusiones obtenidas|Identificación de puntos de inflexión donde la dirección del proyecto cambió|
-|Trazabilidad desde requisitos iniciales hasta implementación final|Preservación de knowledge que normalmente se perdería al descartar opciones|Visualización de la maduración progresiva de conceptos y soluciones|
+|Trazabilidad desde requisitos iniciales hasta implementación final|Preservación de conocimiento que normalmente se perdería al descartar opciones|Visualización de la maduración progresiva de conceptos y soluciones|
 
 ### Beneficios emergentes
 
