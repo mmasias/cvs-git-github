@@ -27,13 +27,25 @@ Los sistemas de control de versiones resuelven directamente cada uno de los prob
 
 Estos sistemas permiten gestionar proyectos de cualquier escala, desde documentos individuales hasta colecciones complejas de archivos. Pueden manejar tanto archivos de texto como documentos binarios, imágenes, presentaciones y recursos digitales diversos, funcionando como un sistema de respaldo distribuido que protege contra pérdida de información.
 
-Su aplicación práctica incluye
+### Documentación del proceso creativo
 
-- Coordinación de equipos distribuidos geográficamente.
-- Gestión de múltiples versiones de un proyecto en paralelo.
-- Colaboración en tiempo real en documentos compartidos.
+Más allá de la gestión técnica, los sistemas de control de versiones documentan automáticamente **cómo se piensa y se crea**, no solo qué se produce:
 
-El control de versiones funciona como la infraestructura que facilita estos procesos, estableciendo las bases para flujos de trabajo colaborativos eficientes.
+|Proceso de razonamiento|Evolución de ideas|Patrones de trabajo|
+|-|-|-|
+|Cada confirmación registra una decisión específica con su justificación, creando un mapa del proceso de resolución de problemas|El historial muestra cómo las ideas evolucionan, qué enfoques se probaron, qué experimentos fallaron y por qué se abandonaron|Los patrones de commits revelan metodologías personales de trabajo, permitiendo identificar fortalezas y áreas de mejora|
+|Posibilita analizar retrospectivamente por qué se tomaron decisiones específicas en momentos concretos|Facilita el aprendizaje de procesos creativos exitosos y su replicación en proyectos futuros|Permite evaluación objetiva del esfuerzo y la dedicación invertida en el desarrollo|
+
+Esta capacidad resulta especialmente valiosa en contextos donde el proceso de creación es tan importante como el resultado final: investigación y desarrollo, innovación empresarial, resolución de problemas complejos, y entornos de aprendizaje técnico.
+
+Su aplicación práctica incluye:
+
+- Coordinación de equipos distribuidos geográficamente
+- Gestión de múltiples versiones de un proyecto en paralelo
+- Colaboración en tiempo real en documentos compartidos
+- **Documentación automática de procesos de innovación y creatividad**
+
+El control de versiones funciona como la infraestructura que facilita estos procesos, estableciendo las bases para flujos de trabajo colaborativos eficientes y **aprendizaje continuo basado en la reflexión sobre el propio proceso creativo**.
 
 Git, como implementación específica de estos principios, se destaca por su eficiencia en la gestión distribuida y su capacidad para manejar proyectos de gran escala, convirtiéndose en la herramienta de referencia para materializar estos beneficios en la práctica profesional.
 
@@ -67,7 +79,7 @@ El proceso sigue un patrón natural: **modificar** → **seleccionar cambios** �
 >
 > - [Repositorios](conceptos-fundamentales/02-repositorios.md)
 > - [Confirmaciones](conceptos-fundamentales/03-confirmaciones.md)
-> - Antes de seguir: [una reflexión](conceptos-fundamentales/04-01-pausaReflexion.md) / [metodología general](conceptos-fundamentales/04-02-metodologiaIntegrada.md) / [RUP + Git](conceptos-fundamentales/04-03-rupMasGit.md)
+> - Antes de seguir: [una reflexión](conceptos-fundamentales/04-01-pausaReflexion.md) / [metodología general](conceptos-fundamentales/04-02-metodologiaIntegrada.md) / [RUP + Git](conceptos-fundamentales/04-03-rupMasGit.md) / [el proceso de creación](conceptos-fundamentales/04-04-procesoDeCreacion.md)
 
 ## Casos de uso por disciplina
 
