@@ -67,6 +67,7 @@ El proceso sigue un patrón natural: **modificar** → **seleccionar cambios** �
 >
 > - [Repositorios](conceptos-fundamentales/02-repositorios.md)
 > - [Confirmaciones](conceptos-fundamentales/03-confirmaciones.md)
+> - Antes de seguir: [una reflexión](conceptos-fundamentales/04-01-pausaReflexion.md) / [metodología general](conceptos-fundamentales/04-02-metodologiaIntegrada.md) / [RUP + Git](conceptos-fundamentales/04-03-rupMasGit.md)
 
 ## Casos de uso por disciplina
 
