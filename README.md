@@ -43,134 +43,30 @@ Git, como implementación específica de estos principios, se destaca por su efi
 
 ### Modelo mental básico
 
-La mayoría de profesionales han experimentado la situación de gestionar múltiples versiones de un documento importante. Un patrón típico produce archivos como "Propuesta_Cliente.docx", "Propuesta_Cliente_v2.docx", "Propuesta_Cliente_final.docx", "Propuesta_Cliente_final_revisado.docx". Este enfoque manual genera confusión sobre cuál es la versión actual, dificulta la recuperación de cambios anteriores y complica la colaboración.
-
-**Git** es un sistema de control de versiones distribuido que se ha convertido en el estándar de la industria para la gestión de cambios en proyectos. Su enfoque distribuido permite que cada participante mantenga una copia completa del historial del proyecto, facilitando el trabajo offline y la colaboración descentralizada.
-
-Git automatiza y perfecciona este proceso manual. En lugar de crear copias físicas de archivos, Git registra únicamente los cambios realizados, manteniendo un historial completo que permite recuperar cualquier versión anterior. Cada vez que se registra un conjunto de cambios, Git crea lo que se denomina una "confirmación" que funciona como una instantánea etiquetada del proyecto en ese momento específico.
-
-**GitHub** es una plataforma de alojamiento en la nube que utiliza Git como motor de control de versiones, proporcionando una interfaz web y funcionalidades adicionales para la colaboración, gestión de proyectos y publicación de contenido. Esta plataforma fue adquirida por Microsoft en 2018 y se ha establecido como el servicio de referencia para alojar repositorios y coordinar trabajo colaborativo en proyectos de diversas disciplinas.
-
-### Conceptos fundamentales
-
-El sistema opera mediante cuatro espacios conceptuales que reflejan el flujo natural de trabajo:
-
-**Directorio de trabajo**: La carpeta normal donde se realizan las modificaciones diarias. Aquí se editan documentos, se crean archivos nuevos y se organizan los materiales del proyecto, exactamente como se haría sin control de versiones.
-
-**Área de preparación**: Un espacio intermedio donde se seleccionan los cambios que se desean registrar permanentemente. No todos los cambios realizados en una sesión de trabajo necesitan registrarse al mismo tiempo, permitiendo agrupar modificaciones relacionadas.
-
-**Repositorio local**: El archivo histórico completo del proyecto que reside en la máquina de trabajo. Contiene todas las versiones anteriores, permitiendo acceder al historial completo sin conexión a internet.
-
-**Repositorio remoto**: Una copia del proyecto alojada en un servidor que facilita la colaboración. Todos los miembros del equipo pueden sincronizar sus cambios a través de este repositorio central.
-
-### Flujo de trabajo cotidiano
-
-El proceso de trabajo sigue un patrón repetible que se integra naturalmente con las rutinas profesionales habituales:
-
-**Modificación**: Se realizan cambios en los archivos del proyecto utilizando las herramientas habituales de cada disciplina. Un escritor edita su texto en Word, un diseñador modifica gráficos en Photoshop, un investigador actualiza datos en Excel.
-
-**Selección**: Se identifican qué cambios están listos para ser registrados permanentemente. Esto permite separar experimentos o trabajo parcial de modificaciones definitivas que se desean preservar en el historial.
-
-**Registro**: Se crea una confirmación que captura el estado actual de los archivos seleccionados junto con una descripción del trabajo realizado. Esta descripción debe explicar qué se cambió y por qué se realizó la modificación.
-
-**Sincronización**: Se envían los cambios registrados al repositorio remoto para que estén disponibles para otros colaboradores, y se obtienen las modificaciones realizadas por otros miembros del equipo.
-
-### Implementación técnica
-
-Git utiliza una interfaz de línea de comandos para ejecutar estas operaciones. Aunque inicialmente puede resultar desconocida para usuarios no técnicos, los comandos básicos siguen una lógica intuitiva:
-
-**Configuración inicial del entorno de trabajo:**
-
-```bash
-git config --global user.name "Ibuprofeno Fernandez"
-git config --global user.email "ibuprofeno.fernandez@gmail.com"
+En lugar de gestionar múltiples versiones manualmente:
+```
+documento_v1.docx
+documento_v2.docx  
+documento_final.docx
+documento_final_real.docx
 ```
 
-Estos comandos establecen la identidad del usuario para que todas las confirmaciones queden registradas con la información correcta del autor.
+Git mantiene **un solo archivo** con **historial completo navegable** internamente.
 
-**Inicialización de un proyecto nuevo:**
+### Herramientas principales
 
-```bash
-git init
-```
+**Git** es el sistema de control de versiones distribuido estándar de la industria. Cada participante mantiene una copia completa del historial, facilitando trabajo offline y colaboración descentralizada.
 
-Convierte una carpeta normal en un repositorio Git, habilitando el seguimiento de cambios en todos los archivos contenidos.
+**GitHub** es la plataforma de alojamiento más popular, proporcionando interfaz web y funcionalidades adicionales para colaboración.
 
-**Obtención de un proyecto existente:**
+### Flujo de trabajo fundamental
 
-```bash
-git clone https://github.com/usuario/proyecto.git
-```
+El proceso sigue un patrón natural: **modificar** → **seleccionar cambios** → **registrar con descripción** → **sincronizar con equipo**.
 
-Descarga una copia completa de un proyecto remoto, incluyendo todo su historial de versiones.
-
-**Gestión diaria de cambios:**
-
-```bash
-git status
-```
-
-Muestra qué archivos han sido modificados desde la última confirmación, proporcionando una visión clara del estado actual del trabajo.
-
-```bash
-git add documento.txt
-```
-
-Selecciona un archivo específico para incluir en la próxima confirmación. Este paso permite elegir exactamente qué cambios registrar.
-
-```bash
-git add .
-```
-
-Selecciona todos los archivos modificados en el directorio actual, útil cuando se desea registrar todos los cambios realizados.
-
-```bash
-git commit -m "Actualizar conclusiones del capítulo 3"
-```
-
-Crea una confirmación con los archivos seleccionados y una descripción clara de las modificaciones realizadas.
-
-**Colaboración con el equipo:**
-
-```bash
-git push
-```
-
-Envía las confirmaciones locales al repositorio remoto, haciéndolas disponibles para otros colaboradores.
-
-```bash
-git pull
-```
-
-Obtiene las confirmaciones realizadas por otros miembros del equipo e integra sus cambios en la copia local del proyecto.
-
-### Gestión de versiones y ramas
-
-Para proyectos complejos, Git permite crear ramas de trabajo independientes. Una rama representa una línea de desarrollo paralela donde se pueden realizar experimentos o desarrollar características específicas sin afectar la versión principal del proyecto.
-
-```bash
-git branch nueva-caracteristica
-git checkout nueva-caracteristica
-```
-
-Estos comandos crean una nueva rama y cambian el contexto de trabajo a ella, permitiendo realizar modificaciones experimentales sin riesgo.
-
-```bash
-git checkout main
-git merge nueva-caracteristica
-```
-
-Una vez completado el trabajo en la rama experimental, estos comandos regresan a la rama principal e integran los cambios desarrollados.
-
-### Casos de uso específicos
-
-**Para escritores y editores:** Git permite experimentar con diferentes estructuras narrativas, mantener versiones en múltiples idiomas, y colaborar con editores manteniendo un registro completo de todas las sugerencias y modificaciones.
-
-**Para diseñadores:** Facilita la gestión de variaciones de diseño, el mantenimiento de bibliotecas de recursos visuales actualizadas, y la colaboración en proyectos creativos complejos donde múltiples personas contribuyen elementos visuales.
-
-**Para investigadores:** Proporciona trazabilidad completa en el análisis de datos, permite mantener versiones de papers académicos con todas las revisiones de pares, y facilita la replicación de resultados manteniendo registro de las metodologías utilizadas.
-
-**Para profesionales empresariales:** Garantiza que documentos críticos como contratos, propuestas comerciales y políticas corporativas mantengan un historial completo de modificaciones con información de autoría y justificación de cambios.
+> **🔍 Para profundizar:** Los conceptos, espacios de trabajo, operaciones y comandos específicos se desarrollan en detalle en las secciones siguientes:
+>
+> - [Repositorios](conceptos-fundamentales/02-repositorios.md)
+> - [Confirmaciones](conceptos-fundamentales/03-confirmaciones.md)
 
 ## Casos de uso por disciplina
 
