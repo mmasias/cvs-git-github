@@ -1,0 +1,94 @@
+@startuml cadenaConfirmaciones
+
+title Historial real de confirmaciones del proyecto\n(Estado al 28 agosto 2025)
+
+!define COMMIT_COLOR #E1F5FE
+!define MERGE_COLOR #FFF3E0
+!define INITIAL_COLOR #E8F5E8
+!define HEAD_COLOR #FFEBEE
+
+object "1bfb074" as commit1 <<Initial Commit>> INITIAL_COLOR {
+    hash = "1bfb07401b65805740e716f37547877c58c86381"
+    author = "Manuel Masías"
+    date = "2025-08-27"
+    message = "Initial commit"
+    parent = null
+    type = "inicial"
+}
+
+object "da585c4" as commit2 <<Normal Commit>> COMMIT_COLOR {
+    hash = "da585c4"
+    message = "docs: actualizar README.md..."
+    ...
+}
+
+object "0df74d1" as commit3 <<Normal Commit>> COMMIT_COLOR {
+    hash = "0df74d1"
+    message = "docs: agregar sección herramientas..."
+    ...
+}
+
+object "304fb71" as commit4 <<Normal Commit>> COMMIT_COLOR {
+    hash = "304fb71"
+    message = "docs: agregar información detallada..."
+    ...
+}
+
+object "bdaf10d" as commit5 <<Normal Commit>> COMMIT_COLOR {
+    hash = "bdaf10d"
+    message = "docs: corregir errores redacción..."
+    ...
+}
+
+object "9a5735f" as commit6 <<Normal Commit>> COMMIT_COLOR {
+    hash = "9a5735f"
+    message = "docs: actualizar introducción al control..."
+    ...
+}
+
+object "e7ec78d" as commit7 <<Normal Commit>> COMMIT_COLOR {
+    hash = "e7ec78da64a683eff4520f001428a865115b852d"
+    author = "mmasias@sdf1"
+    date = "2025-08-27"
+    message = "feat: artículo repositorios, diagramas..."
+    parent = "9a5735f"
+    type = "normal"
+}
+
+object "117959f" as commit8 <<Normal Commit>> HEAD_COLOR {
+    hash = "117959f07efcc2b21f710717078d608d7c6ff4ac"
+    author = "mmasias@sdf1"
+    date = "2025-08-28"
+    message = "docs: agregar sección sobre confirmaciones..."
+    parent = "e7ec78d"
+    type = "normal"
+}
+
+object "HEAD" as head <<Pointer>> {
+    apunta_a = "117959f"
+    rama_actual = "main"
+}
+
+' Relaciones de parentesco (cadena cronológica)
+commit8 -d-> commit7 : parent
+commit7 -d-> commit6 : parent
+commit6 -d-> commit5 : parent
+commit5 -d-> commit4 : parent
+commit4 -d-> commit3 : parent
+commit3 -d-> commit2 : parent
+commit2 -d-> commit1 : parent
+
+' HEAD apunta al commit actual
+head -l-> commit8 : apunta
+
+note right of commit1 : Primera confirmación\ndel repositorio.\nNo tiene padre.
+
+note top of commit8 : Confirmación actual\n(HEAD).\nÚltimo trabajo.
+
+note top of head : HEAD es un puntero\nque indica dónde\nestamos trabajando
+
+'note right of commit5 : Commits intermedios\n(formato resumido).\nContienen mismos\nmetadatos completos.
+
+'note left of commit6 : Los tres últimos commits\nmostrados con detalle\ncompleto para ejemplo
+
+@enduml

@@ -87,7 +87,9 @@ La información se mueve entre los cuatro espacios mediante operaciones específ
 
 <div align=center>
 
-![](/images/modelosUML/flujoInformacionRepositorio.svg)
+|![](/images/modelosUML/flujoInformacionRepositorio.svg)
+|:-:
+|[Código fuente](/modelosUML/flujoInformacionRepositorio.puml)
 
 </div>
 
@@ -98,7 +100,9 @@ Además del flujo básico, existen operaciones para consultar el estado y gestio
 
 <div align=center>
 
-![](/images/modelosUML/operacionesConsultaGestion.svg)
+|![](/images/modelosUML/operacionesConsultaGestion.svg)
+|:-:
+|[Código fuente](/modelosUML/operacionesConsultaGestion.puml)
 
 </div>
 

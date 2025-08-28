@@ -117,17 +117,17 @@ actualizar varios archivos y arreglar cosas del README
 
 ## El historial como cadena
 
-Las confirmaciones forman una cadena cronológica:
+Las confirmaciones forman una cadena cronológica donde cada confirmación apunta a su predecesora, creando un historial navegable:
 
-```
-A ← B ← C ← D (HEAD)
-```
+<div align=center>
 
-Donde:
-- **A**: Primera confirmación
-- **B, C, D**: Confirmaciones posteriores
-- **HEAD**: Puntero a la confirmación actual
-- **←**: Cada confirmación apunta a su predecesora
+|![](/images/modelosUML/cadenaConfirmaciones.svg)
+|:-:
+|[Código fuente](/modelosUML/cadenaConfirmaciones.puml)
+
+</div>
+
+Este diagrama muestra la cadena real de confirmaciones de este proyecto, donde cada objeto representa una confirmación con sus metadatos completos y las relaciones de parentesco que forman el historial.
 
 ### Navegando en el historial
 

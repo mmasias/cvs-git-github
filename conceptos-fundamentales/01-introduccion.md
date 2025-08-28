@@ -119,7 +119,9 @@ documento.docx (con historial completo navegable)
 
 <div align=center>
 
-![](/images/modelosUML/flujoTrabajoFundamental.svg)
+|![](/images/modelosUML/flujoTrabajoFundamental.svg)
+|:-:
+|[Código fuente](/modelosUML/flujoTrabajoFundamental.puml)
 
 </div>
 
